@@ -5,6 +5,37 @@
   
 }
 
+body::before{
+  content:"H";
+  position: fixed;
+  top: 20%;
+  left:10%;
+  font-size: 20em;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px #555;
+
+}
+
+body::after{
+  content:"B";
+  position: fixed;
+  top: 20%;  
+  right: 10%; 
+  font-size: 20em;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px #555;
+  white-space: nowrap;
+
+}
+
+@font-face {
+  font-family: "CloisterBlack";
+  src: local("CloisterBlack.ttf"),
+    url("CloisterBlack.ttf") format("truetype");
+}
+
 ul, li {
   list-style: none;
 
@@ -15,20 +46,15 @@ a {
   color: black;
 }
 
-@font-face {
-  font-family: "CloisterBlack";
-  src: local("CloisterBlack.ttf"),
-    url("CloisterBlack.ttf") format("truetype");
-}
+
 
 /* section head */
 .head{
   background: url(../Img/fond-carte.png);
-  z-index: 100;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100vh;
+  height: 100%;
 }
 /* menu header */
 .col-head, .text-white {
@@ -38,14 +64,14 @@ a {
   align-content: center;
   text-align: center;
   font-style: normal;
-  font-size: 20pt;
+  font-size: 20px;
   color: #FFFFFF;
 }
 
 .text-muted {
   color: white;
   text-align: center;
-  font-size: 14pt;
+  font-size: 14px;
 }
 
 .icon-title {
@@ -83,9 +109,9 @@ a {
   left: 0;
   bottom:0;
 }
-.title{
-  -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.title-animate{
+  -webkit-animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 @-webkit-keyframes focus-in-expand-fwd {
   0% {
