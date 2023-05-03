@@ -1,22 +1,98 @@
-.list-avatar{
-    display: flex;
-    justify-content: center;
-    align-items:center;
+
+.list-avatar {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
 }
 
-.list-avatar:hover {
+
+.list-avatar .row .col {
+  color: white;
+  text-align: center;
+  cursor: help;
+  margin: 50px;
+  padding: 65px;
+}
+
+.list-avatar .shadow-red {
+  box-shadow: inset 0 0 1em , 0 0 6em red;
+}
+
+.list-avatar .shadow-blue {
+  width:229px;
+  height: 354px;
+  box-shadow: inset 0 0 1em , 0 0 6em #0000AB;
+}
+
+/* .shadow-red:hover{
+  -webkit-animation: flip-2-ver-left-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: flip-2-ver-left-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  
+}
+.shadow-blue:hover{
+  -webkit-animation: flip-2-ver-left-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: flip-2-ver-left-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+ @-webkit-keyframes flip-2-ver-left-1 {
+  0% {
+    -webkit-transform: translateX(0) rotateY(0);
+            transform: translateX(0) rotateY(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  100% {
+    -webkit-transform: translateX(-100%) rotateY(180deg);
+            transform: translateX(-100%) rotateY(180deg);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+@keyframes flip-2-ver-left-1 {
+  0% {
+    -webkit-transform: translateX(0) rotateY(0);
+            transform: translateX(0) rotateY(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  100% {
+    -webkit-transform: translateX(-100%) rotateY(180deg);
+            transform: translateX(-100%) rotateY(180deg);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }} */
+
+
+  
+/* card reto-verso */
+.card-reto-verso {
+ 
+  width: 230px;
+  height: 354px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.card-reto-verso{
+  display: flex;
+  justify-content: center;
+}
+
+.card-reto-verso img{
+
+  position: absolute;
+  backface-visibility:hidden;
   transition: 2s;
 }
-.list-avatar .row .col{
-  padding: 30px;
-  margin: 30px;
+
+.card-reto-verso .verso{
+  transform: rotateY(180deg);
 }
 
-.list-avatar .shadow-red{
-  box-shadow: inset 0 0 1em , 0 0 7em red;
+.card-reto-verso:hover .verso{
+  transform: rotateY(0deg);
 }
 
-.list-avatar .shadow-blue {  
-  box-shadow: inset 0 0 1em , 0 0 7em #0000AB;
+.card-reto-verso:hover .reto{
+  transform: rotateY(-180deg);
 }
-

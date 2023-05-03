@@ -15,6 +15,11 @@ a {
   color: black;
 }
 
+@font-face {
+  font-family: "CloisterBlack";
+  src: local("CloisterBlack.ttf"),
+    url("CloisterBlack.ttf") format("truetype");
+}
 
 /* section head */
 .head{
@@ -25,17 +30,22 @@ a {
   background-position: center;
   height: 100vh;
 }
-
 /* menu header */
-.col-head, .text-white, .text-muted {
+.col-head, .text-white {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-content: center;
   text-align: center;
   font-style: normal;
-  font-size: 23pt;
+  font-size: 20pt;
   color: #FFFFFF;
+}
+
+.text-muted {
+  color: white;
+  text-align: center;
+  font-size: 14pt;
 }
 
 .icon-title {
@@ -47,7 +57,7 @@ a {
   display: flex;
   justify-content: center;
 }
-
+/* PIOCHE UNE CARTE */
 .left {
   position: absolute;
   border: 3px solid red;
@@ -61,6 +71,7 @@ a {
   font-size: 100px;
   margin-top: 20px;
   padding: 20px;
+  font-family: "CloisterBlack", sans-serif;
   text-align: center;
   color: white;
 }
@@ -72,3 +83,42 @@ a {
   left: 0;
   bottom:0;
 }
+.title{
+  -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
