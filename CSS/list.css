@@ -1,0 +1,22 @@
+.list-avatar{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.list-avatar:hover {
+  transition: 2s;
+}
+.list-avatar .row .col{
+  padding: 30px;
+  margin: 30px;
+}
+
+.list-avatar .shadow-red{
+  box-shadow: inset 0 0 1em , 0 0 7em red;
+}
+
+.list-avatar .shadow-blue {  
+  box-shadow: inset 0 0 1em , 0 0 7em #0000AB;
+}
+
