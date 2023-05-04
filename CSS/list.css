@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items:center;
-
+  padding: 30px;
 }
 
 
@@ -59,6 +59,10 @@
 .card-reto-verso:hover .reto{
   transform: rotateY(-180deg);
 }
+.lien{
+  display: flex;
+  justify-content: center;
+}
 
 
 /* élément du fond */
@@ -67,22 +71,59 @@
 }
 .el1{
   left:0;
-  top:89vw;
-
+  top:100vw;
+  opacity: 0.5;
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+	        animation: pulsate-fwd 2s ease-in-out infinite both;
 }
 
 .el2{
   right:0;
-  top:100vw;
+  top:120vw;
+  opacity: 0.5;
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+	        animation: pulsate-fwd 2s ease-in-out infinite both;
 }
 
 .el3{
   right:0;
-  top:50vw;
-
+  top:60vw;
+  opacity: 0.5;
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+	        animation: pulsate-fwd 2s ease-in-out infinite both;
 }
-
 .el4{
   left:0;
-  top:40vw;
+  top:30vw;
+  opacity: 0.5;
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+	        animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }

@@ -7,10 +7,10 @@ window.addEventListener("scroll", scrollLoad )
 function scrollLoad() {
   // le haut de l'élément .pioche-carte atteint 60% de la hauteur de la fenêtre, l'animation se déclenchera.
    let tagetValue = window.innerHeight * 0.6
-   console.log(tagetValue)
+   
   //  calcule la distance entre le haut de l'élément .pioche-carte et le haut de la fenêtre.
    let titleTop = titleEl.getBoundingClientRect().top
-   console.log(titleTop)
+   
 
    if(titleTop<=tagetValue){
     titleEl.classList.add("title-animate")
@@ -19,6 +19,3 @@ function scrollLoad() {
    }
 
 }
-
-
-
