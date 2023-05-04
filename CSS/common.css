@@ -14,6 +14,7 @@ body::before{
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 1px #555;
+  white-space: nowrap;
 
 }
 
@@ -29,7 +30,6 @@ body::after{
   white-space: nowrap;
 
 }
-
 @font-face {
   font-family: "CloisterBlack";
   src: local("CloisterBlack.ttf"),
@@ -45,9 +45,6 @@ a {
   text-decoration: none;
   color: black;
 }
-
-
-
 /* section head */
 .head{
   background: url(../Img/fond-carte.png);

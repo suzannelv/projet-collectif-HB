@@ -30,19 +30,16 @@
   
 /* card reto-verso */
 .card-reto-verso {
- 
   width: 230px;
   height: 354px;
   position: relative;
   transform-style: preserve-3d;
-}
-.card-reto-verso{
   display: flex;
   justify-content: center;
 }
 
 .card-reto-verso img{
-
+  border-radius: 9px;
   position: absolute;
   backface-visibility:hidden;
   transition: 2s;

@@ -17,5 +17,4 @@ function scrollLoad() {
    }else{
     titleEl.classList.remove("title-animate")
    }
-
 }

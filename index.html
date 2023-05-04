@@ -1,256 +1,247 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jeux de cartes de notre formation DWWM-PE7.">
-  <link rel="shortcut icon" type=".png" href="./Img/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="./CSS/index.css">
-  <title>Projet collectif</title>
-</head>
-<body>
-  <!-- menu burger -->
-  <header> 
-    <div class="collapse bg-dark" id="navbarHeader">
-      <div class="container-head">
-        <div class="col-head">
-          <h4 class="text-white">À propos de nous</h4>
-          <p class="text-muted">Nous sommes 16 apprenants déterminer à obtenir notre diplôme DWWM !</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeux de cartes de notre formation DWWM-PE7.">
+    <link rel="shortcut icon" type=".png" href="./Img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Projet collectif</title>
+  </head>
+  <body>
+    <header> <!-- menu burger -->
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container-head">
+          <div class="col-head">
+            <h4 class="text-white">À propos de nous</h4>
+            <p class="text-muted">Nous sommes 16 apprenants déterminer à obtenir notre diplôme DWWM !</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <img class="icon-title" src="./Img/logo.png" width="45" alt="Icone Jocker">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </div>
-  </header>
-  
-  <main>
-    <!-- section title -->
-    <section class="head text-center container-fluid bg-black">
-      <div class="row">
-        <div class="clown ">
-          <img src="./Img/clown.png" alt="" class="">
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img class="icon-title" src="./Img/logo.png" width="45" alt="Icone Jocker">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
       </div>
-    </section>
+    </header>
+    
+    <main>
+      <!-- section title -->
+      <section class="head text-center container-fluid bg-black">
+        <div class="row">
+          <div class="clown ">
+            <img src="./Img/clown.png" alt="" class="">
+          </div>
+        </div>
+      </section>
 
-    <!-- pioche carte -->
-    <div class="container-fluid pioche-carte bg-black">
-      <div class="left"></div>
-      <div class="title">PIOCHE UNE CARTE</div>
-      <div class="right" ></div>
-    </div>
-
-
-    <!-- list avatar -->
-    <section class="list-avatar container-fluid flex-column bg-black">
-      <!-- elements du fond -->
-      <div class="el el1">
-        <img src="./Img/el1.png" alt="">
-      </div>
-      <div class="el el2">
-        <img src="./Img/el2.png" alt="">
-      </div>
-      <div class="el el3">
-        <img src="./Img/el3.png" alt="">
-      </div>
-      <div class="el el4">
-        <img src="./Img/el4.png" alt="">
+      <!-- pioche carte -->
+      <div class="container-fluid pioche-carte bg-black">
+        <div class="left"></div>
+        <div class="title">PIOCHE UNE CARTE</div>
+        <div class="right" ></div>
       </div>
 
-      <!-- ligne 1 -->
-      <div class="row">
-        <div class="col card-reto-verso">
-            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-            <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Antoine', 'DELABRE', '23')">
-            </a>   
+
+      <!-- list avatar -->
+      <section class="list-avatar container-fluid flex-column bg-black">
+        <!-- elements du fond -->
+        <div class="el el1">
+          <img src="./Img/el1.png" alt="">
+        </div>
+        <div class="el el2">
+          <img src="./Img/el2.png" alt="">
+        </div>
+        <div class="el el3">
+          <img src="./Img/el3.png" alt="">
+        </div>
+        <div class="el el4">
+          <img src="./Img/el4.png" alt="">
+        </div>
+
+        <!-- ligne 1 -->
+        <div class="row">
+          <div class="col card-reto-verso">
+              <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+              <a href="#display-info" class="lien">
+                <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Antoine', 'DELABRE', '23', 'logo.png')">
+              </a>   
+          </div> 
         </div> 
-      </div> 
 
-      <!-- ligne 2 -->
-      <div class="row">
-        <div class="col card-reto-verso">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Aya', 'BENMAKHLOUF', '23')">
-          </a>
-        </div>
-
-        <div class="col card-reto-verso">
-          <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Angélo', 'FERNANDEZ', '19')">
-          </a>
-        </div>
-
-        <div class="col card-reto-verso">
+        <!-- ligne 2 -->
+        <div class="row">
+          <div class="col card-reto-verso">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Clency', 'LOUISY-JOSEPH', '26')"> 
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Aya', 'BENMAKHLOUF', '23')">
             </a>
+          </div>
+
+          <div class="col card-reto-verso">
+            <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Angélo', 'FERNANDEZ', '19')">
+            </a>
+          </div>
+
+          <div class="col card-reto-verso">
+              <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+              <a href="#display-info" class="lien">
+                <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Clency', 'LOUISY-JOSEPH', '26')"> 
+              </a>
+          </div>
         </div>
-      </div>
-      
-      <!-- ligne 3 -->
-      <div class="row">
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Clément', 'CHARRASSIER', '23')">
-          </a>
+        
+        <!-- ligne 3 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Clément', 'CHARRASSIER', '23')">
+            </a>
+          </div>
+
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Damien', 'DUBOST', '23')">
+            </a>
+          </div>
         </div>
 
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Damien', 'DOBUST', '23')">
-          </a>
-        </div>
-      </div>
+        <!-- ligne 4 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Emre', 'AYDOGAN', '24')">
+            </a>
 
-      <!-- ligne 4 -->
-      <div class="row">
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Emre', 'AYDOGAN', '24')">
-          </a>
+          </div>
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
+            <a href="#display-info" class="lien">
+            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Florian', 'MOREL', '28')">
+            </a>
+          </div>
 
-        </div>
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
-          <a href="#display-info" class="lien">
-           <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Florian', 'MOREL', '28')">
-          </a>
-        </div>
-
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Ghazi', 'ELJORF', '37')">
-          </a>
-        </div>
-      </div>
-
-      <!-- ligne 5 -->
-      <div class="row">
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto"> 
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Hristine', 'STANKOA', '33')">
-          </a>
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Ghazi', 'ELJORF', '37')">
+            </a>
+          </div>
         </div>
 
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Khaoula', 'OUACHANI', '23')">
-          </a>
-        </div>
-      </div>
+        <!-- ligne 5 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto"> 
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Hristine', 'STANKOA', '33')">
+            </a>
+          </div>
 
-      <!-- ligne 6 -->
-      <div class="row">
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-          <a href="#display-info" class="lien">
-           <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Kevin', 'MUZIAK', '23')">
-          </a>
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Khaoula', 'OUACHANI', '23')">
+            </a>
+          </div>
+        </div>
+
+        <!-- ligne 6 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Kevin', 'MUZIAK', '23')">
+            </a>
+          </div> 
+
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
+            <a href="#display-info" class="lien">
+            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Meijuan', 'LU', '33')">
+            </a>
+          </div>
+
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Nohe', 'BIBIMOUNE', '36')">
+            </a>
+          </div>
+        </div>
+
+        <!-- ligne 7 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Rayan', 'QUESSADA', '23')">
+            </a>
+          </div>
+
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Yanis', 'BENYOUCEF', '20')">
+            </a>
+          </div>
+        </div>
+
+        <!-- ligne 8 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/test.jpg" alt="" class="verso" >
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- carte personnelle -->
+    <div class="container-fluid carte-personnelle bg-black">
+      <div class="row d-flex ">
+        <div class="col">
+          <div id="display-info" class="row d-flex justify-content-center"></div>
         </div> 
 
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
-          <a href="#display-info" class="lien">
-           <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Meijuan', 'LU', '33')">
-          </a>
+        <div class="col map bg-secondary">
+          map
         </div>
-
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Nohe', 'BIBIMOUNE', '36')">
-          </a>
-        </div>
-      </div>
-
-      <!-- ligne 7 -->
-
-      <div class="row">
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Rayan', 'QUESSADA', '23')">
-          </a>
-        </div>
-
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-red.png" alt="" class="shadow-red reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Yanis', 'BENYOUCEF', '20')">
-          </a>
-        </div>
-      </div>
-
-      <!-- ligne 8 -->
-      <div class="row">
-        <div class="col card-reto-verso ">
-          <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
-          <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" >
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- carte personnelle -->
-  <div class="container-fluid carte-personnelle bg-black">
-    <div class="row">
-      <div id="display-info" class="col">
-       
-      </div>
-      </div>
-
-      <div class="col map">
-        map
       </div>
     </div>
-  </div>
 
+    <!-- footer -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2023 Human Booster, Inc</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="./Img/logo.png" alt="" class="rounded-circle">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">À propos de nous</a></li>
+          </ul>
+        </footer>
+      </div>
 
-  <!-- footer -->
-  
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">&copy; 2023 HB, Inc</p>
-    
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <img src="./Img/logo.png" alt="" class="rounded-circle">
-        </a>
-    
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-        </ul>
-      </footer>
-    </div>
-    
-
-<script src="./JS/index.js"></script>
-<script src="./JS/info.JS"></script>
-<script src="./JS/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/info.JS"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
