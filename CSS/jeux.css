@@ -64,7 +64,7 @@ ul[id="board_game_container"]
     border-radius: var(--border-radius);
     margin:0 auto;
     width: 100%;
-    height: 76vh;
+    max-height: 76vh;
 }
 
 ul[class="no-click"]
