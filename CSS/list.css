@@ -56,6 +56,7 @@
 .card-reto-verso:hover .reto{
   transform: rotateY(-180deg);
 }
+
 .lien{
   display: flex;
   justify-content: center;

@@ -2,7 +2,6 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  
 }
 
 body::before{
@@ -29,11 +28,6 @@ body::after{
   -webkit-text-stroke: 1px #555;
   white-space: nowrap;
 
-}
-@font-face {
-  font-family: "CloisterBlack";
-  src: local("CloisterBlack.ttf"),
-    url("CloisterBlack.ttf") format("truetype");
 }
 
 ul, li {
@@ -80,6 +74,7 @@ a {
   display: flex;
   justify-content: center;
 }
+
 /* PIOCHE UNE CARTE */
 .left {
   position: absolute;

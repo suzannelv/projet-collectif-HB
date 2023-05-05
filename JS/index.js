@@ -1,5 +1,4 @@
 // écouter le scroll
-
 let titleEl = document.querySelector(".pioche-carte .title")
 
 window.addEventListener("scroll", scrollLoad )

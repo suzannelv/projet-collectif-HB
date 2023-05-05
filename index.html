@@ -16,13 +16,13 @@
         <div class="container-head">
           <div class="col-head">
             <h4 class="text-white">À propos de nous</h4>
-            <p class="text-muted">Nous sommes 16 apprenants déterminer à obtenir notre diplôme DWWM !</p>
+            <p class="text-muted">Nous sommes 16 apprenants déterminés à obtenir notre diplôme DWWM !</p>
           </div>
         </div>
       </div>
       <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container">
-          <a href="#" class="navbar-brand d-flex align-items-center">
+          <a href="login.html" class="navbar-brand d-flex align-items-center">
             <img class="icon-title" src="./Img/logo.png" width="45" alt="Icone Jocker">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,10 +68,13 @@
 
         <!-- ligne 1 -->
         <div class="row">
-          <div class="col card-reto-verso">
-              <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+          <div class="col card-reto-verso modal-body" data-bs-toggle="modal" >
+              <img src="./Img/back-red.png" alt="verso-rouge" class="shadow-red reto">
               <a href="#display-info" class="lien">
-                <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Antoine', 'DELABRE', '23', 'logo.png')">
+                <img src="./Img/antoine.png" alt="avatar-antoine" class="verso" 
+                     onclick="showInfo('Antoine', 'DELABRE', '24', 'antoine.png')" 
+                     data-latitude="46.0384"  
+                     data-longitude="4.454">
               </a>   
           </div> 
         </div> 
@@ -81,21 +84,32 @@
           <div class="col card-reto-verso">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Aya', 'BENMAKHLOUF', '23')">
+              <img src="./Img/aya.png" alt="avatar-aya" class="verso" 
+                   onclick="showInfo('Aya', 'BENMAKHLOUF', '23', 'aya.png')"
+                   data-latitude="36.362" 
+                   data-longitude="6.635">
             </a>
           </div>
 
           <div class="col card-reto-verso">
             <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Angélo', 'FERNANDEZ', '19')">
+              <img src="./Img/angelo.png" alt="avatar-angelo" class="verso" 
+                  onclick="showInfo('Angélo', 'FERNANDEZ', '19', 'angelo.png')"
+                  data-latitude="-0.181"  
+                  data-longitude="-78.460"   
+                  >
             </a>
           </div>
 
           <div class="col card-reto-verso">
               <img src="./Img/back-red.png" alt="" class="shadow-red reto">
               <a href="#display-info" class="lien">
-                <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Clency', 'LOUISY-JOSEPH', '26')"> 
+                <img src="./Img/clency.png" alt="avatar-clency" class="verso" 
+                     onclick="showInfo('Clency', 'LOUISY-JOSEPH', '26', 'clency.png')"
+                     data-latitude="34.061"  
+                     data-longitude="-118.219"
+                     > 
               </a>
           </div>
         </div>
@@ -105,14 +119,21 @@
           <div class="col card-reto-verso ">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Clément', 'CHARRASSIER', '23')">
+              <img src="./Img/clement.png" alt="avatar-clement" class="verso" 
+                   onclick="showInfo('Clément', 'CHARRASSIER', '25', 'clement.png')"
+                   data-latitude="46.891"  
+                   data-longitude="-71.333">
             </a>
           </div>
 
           <div class="col card-reto-verso ">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Damien', 'DUBOST', '23')">
+              <img src="./Img/damien.png" alt="avatar-damien" class="verso" 
+                   onclick="showInfo('Damien', 'DUBOST', '24', 'damien.png')"
+                   data-latitude="46.0384"  
+                   data-longitude="4.454"
+                   >
             </a>
           </div>
         </div>
@@ -122,21 +143,33 @@
           <div class="col card-reto-verso ">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Emre', 'AYDOGAN', '24')">
+              <img src="./Img/emre.png" alt="avatar-emre" class="verso" 
+                   onclick="showInfo('Emre', 'AYDOGAN', '24', 'emre.png')"
+                   data-latitude="36.897"  
+                   data-longitude="30.721"
+                    >
             </a>
 
           </div>
           <div class="col card-reto-verso ">
             <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
             <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Florian', 'MOREL', '28')">
+            <img src="./Img/florian.png" alt="avatar-florian" class="verso" 
+                 onclick="showInfo('Florian', 'MOREL', '27', 'florian.png')"
+                 data-latitude="38.184"  
+                 data-longitude="15.461"
+                 >
             </a>
           </div>
 
           <div class="col card-reto-verso ">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Ghazi', 'ELJORF', '37')">
+              <img src="./Img/ghazi.png" alt="avatar-ghazi" class="verso" 
+                   onclick="showInfo('Ghazi', 'ELJORF', '37', 'ghazi.png')"
+                   data-latitude="-41.281"  
+                   data-longitude="174.745"
+                   >
             </a>
           </div>
         </div>
@@ -146,14 +179,22 @@
           <div class="col card-reto-verso ">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto"> 
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Hristine', 'STANKOA', '33')">
+              <img src="./Img/hristina.png" alt="avatar-hristina" class="verso"
+                   onclick="showInfo('Hristina', 'STANKOvA', '33', 'hristina.png')"
+                   data-latitude="42.704"  
+                   data-longitude="23.329"
+                   >
             </a>
           </div>
 
           <div class="col card-reto-verso ">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Khaoula', 'OUACHANI', '23')">
+              <img src="./Img/khaoula.png" alt="avatar-kevin" class="verso" 
+                   onclick="showInfo('Khaoula', 'OUACHANI', '23', 'khaoula.png')"
+                   data-latitude="33.808"  
+                   data-longitude="10.846"
+                   >
             </a>
           </div>
         </div>
@@ -163,21 +204,32 @@
           <div class="col card-reto-verso ">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Kevin', 'MUZIAK', '23')">
+            <img src="./Img/kevin.png" alt="avatar-khaoula" class="verso" 
+                 onclick="showInfo('Kevin', 'MUZIAK', '29', 'kevin.png')"
+                 data-latitude="47.903"  data-longitude="106.904"
+                 >
             </a>
           </div> 
 
           <div class="col card-reto-verso ">
             <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
             <a href="#display-info" class="lien">
-            <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Meijuan', 'LU', '33')">
+            <img src="./Img/meijuan.png" alt="avatar-meijuan" class="verso" 
+                 onclick="showInfo('Meijuan', 'LU', '33', 'meijuan.png')"
+                 data-latitude="38.921"  
+                 data-longitude="121.614"
+                 >
             </a>
           </div>
 
           <div class="col card-reto-verso ">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Nohe', 'BIBIMOUNE', '36')">
+              <img src="./Img/nohe.png" alt="avatar-nohe" class="verso" 
+                   onclick="showInfo('Nohe', 'BIBIMOUNE', '36', 'nohe.png')"
+                   data-latitude="34.004"  
+                   data-longitude="36.211"
+                   >
             </a>
           </div>
         </div>
@@ -187,14 +239,21 @@
           <div class="col card-reto-verso ">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Rayan', 'QUESSADA', '23')">
+              <img src="./Img/rayan.png" alt="avatar-rayan" class="verso" 
+                   onclick="showInfo('Rayan', 'QUESSADA', '20', 'rayan.png')"
+                   data-latitude="38.906"  data-longitude="1.420"
+                   >
             </a>
           </div>
 
           <div class="col card-reto-verso ">
             <img src="./Img/back-red.png" alt="" class="shadow-red reto">
             <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" onclick="showInfo('Yanis', 'BENYOUCEF', '20')">
+              <img src="./Img/yanis.png" alt="avatar-yanis" class="verso" 
+                   onclick="showInfo('Yanis', 'BENYOUCEF', '20', 'yanis.png')"
+                   data-latitude="16.506"  
+                   data-longitude="-151.746"
+                   >
             </a>
           </div>
         </div>
@@ -203,8 +262,8 @@
         <div class="row">
           <div class="col card-reto-verso ">
             <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
-            <a href="#display-info" class="lien">
-              <img src="./Img/test.jpg" alt="" class="verso" >
+            <a href="./EasterEgg.html" class="lien">
+              <img src="./Img/card-blason.png" alt="carte-surprise" class="verso" >
             </a>
           </div>
         </div>
@@ -218,8 +277,8 @@
           <div id="display-info" class="row d-flex justify-content-center"></div>
         </div> 
 
-        <div class="col map bg-secondary">
-          map
+        <div id="map" class="col bg-secondary">
+          <h3>Map</h3>
         </div>
       </div>
     </div>
@@ -230,7 +289,7 @@
           <p class="col-md-4 mb-0 text-muted">&copy; 2023 Human Booster, Inc</p>
       
           <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <img src="./Img/logo.png" alt="" class="rounded-circle">
+            <img src="./Img/logo.png" alt="logo-jocker" class="rounded-circle" width="70">
           </a>
       
           <ul class="nav col-md-4 justify-content-end">
@@ -241,7 +300,10 @@
       </div>
 
     <script src="./JS/index.js"></script>
-    <script src="./JS/info.JS"></script>
+    <script src="./JS/info.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI2uSAf3RwAdhsiZ0jzISVAc4y9WrfhbA&callback=initMap"
+    async ></script>
+    <script src="./JS/map.js"></script>
     <script src="./JS/bootstrap.bundle.min.js"></script>
   </body>
 </html>

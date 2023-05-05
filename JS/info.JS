@@ -5,7 +5,7 @@ function showInfo(nom, prenom, age, avatar) {
     // Affiche les informations dans la div display-info
     displayInfo.innerHTML =
       "<h3 class='text-center'>Info</h3>" +
-      "<div class='col ps-5'>"+
+      "<div class='col intro ps-5'>"+
         "<p>Nom: " + nom + "</p>" +
         "<p>Prénom: " + prenom + "</p>" +
         "<p>Age: " + age + "</p>"+
@@ -15,6 +15,3 @@ function showInfo(nom, prenom, age, avatar) {
         "<img class='rounded-circle' src=../Img/"+ avatar +">" +
       "</div>";
   }
-
-
-

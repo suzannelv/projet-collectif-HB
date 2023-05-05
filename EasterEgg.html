@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/jeux.css">
+    <!-- <link rel="icon" type="image/png" href="./favicon/favicon.png"> -->
+    <title>Jeu du Memory DWWM PE7</title>
+</head>
+<body>
+    <header>
+        <p data-attempts-count="0">Nombre de tentatives :</p>
+        <p data-pair-found="0 / 16">Nombre de paires trouvées :</p>
+        <p data-score="&#9733; &#9733; &#9733; &#9733; &#9734;" class="hidden">Score :</p>
+    </header>
+
+    <main>
+        <ul id="board_game_container"></ul>
+    </main>
+
+    <footer>
+        <p><input type="button" value="Nouvelle partie" id="NewGame"/></p>
+        <p data-timer="00:00"></p>
+    </footer> 
+
+    <script type="module" src="./JS/app.js"></script>
+</body>
+</html> 

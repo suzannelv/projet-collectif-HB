@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    color: white;
+    --border-radius: 0.8rem;
+}
+
+header {
+    background-color: #494949;
+    height: 6rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.3rem;
+}
+
+p[data-attempts-count]::after,
+p[data-pair-found]::after,
+p[data-score]::after,
+p[data-timer]::after 
+{
+    margin-left: 0.3rem;
+}
+
+p[data-attempts-count]::after
+{
+    content: attr(data-attempts-count);
+}
+
+p[data-pair-found]::after
+{
+    content: attr(data-pair-found);
+}
+
+p[data-score]::after
+{
+    content: attr(data-score);
+    font-size: 2rem;
+}
+
+ul[id="board_game_container"]
+{
+    display: grid;
+    grid-template-columns: repeat(8, 120px);
+    grid-template-rows: repeat(4, 120px);
+    grid-column-gap: 0.9rem;
+    grid-row-gap: 0.9rem;
+    padding: 1rem;
+    background-color: #f3c220;
+    list-style-type: none;
+    border-radius: var(--border-radius);
+    margin:0 auto;
+    width: 100%;
+    height: 76vh;
+}
+
+ul[class="no-click"]
+{
+    pointer-events: none;
+}
+
+li[class*="card"]
+{
+    background-image: url(../Img/card/BlasonDWWM.png);
+    background-size: cover;
+    border-radius:var(--border-radius);
+    cursor: pointer;
+}
+
+
+li[class*="card"] img
+{
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+
+li[class*="flip-card"]
+{
+    background-color: #fff;
+    background-image: none;
+    transform: rotateY(360deg);
+    transition: transform 0.5s linear;
+    pointer-events: none;
+}
+
+li[class*="flip-card"] img  /*et là j'avais oublié l'étoile, c'est a cause de ça qu'on avait pas les img au click*/
+{
+    visibility: visible;
+}
+
+footer
+{
+    background-color: #494949;
+    height: 5rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p[data-timer]::before 
+{
+    content:'\23F2';
+}
+
+p[data-timer]::after
+{
+    content: attr(data-timer);
+}
+
+p[class="hidden"]
+{
+    display: none;
+}
+
+
+#NewGame {
+    border-radius: var(--border-radius);
+    padding: 5px;
+    margin-bottom: 0.5rem;
+}
+
+
+@media screen and (max-width: 1000px ) {
+
+    ul[id="board_game_container"]{
+    grid-template-columns: repeat(8, 92px);
+    grid-template-rows: repeat(4, 92px);
+    margin: 0;
+    height: 40%;
+    }
+}
+
+@media screen and (max-width: 800px ) {
+
+    ul[id="board_game_container"]{
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(4, 70px);
+    margin: 0;
+    height: 40%;
+    }
+}
+
+@media screen and (max-width: 600px ) {
+
+    header {
+        font-size: 1rem;
+        height: 4rem;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    ul[id="board_game_container"]{
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(8, 70px);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    margin: 0;
+    height: 40%;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    ul[id="board_game_container"] {
+    grid-template-columns: repeat(4, 65px);
+    grid-template-rows: repeat(8, 65px);
+    }
+
+    }
