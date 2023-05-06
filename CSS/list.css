@@ -1,11 +1,10 @@
-
+/* liste des cartes avatar */
 .list-avatar {
   display: flex;
   justify-content: center;
   align-items:center;
   padding: 30px;
 }
-
 
 .list-avatar .row .col {
   color: white;
@@ -65,19 +64,36 @@
 
 /* élément du fond */
 .el{
-  position: absolute;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
+
+.el1,
+.el2,
+.el3,
+.el4{
+  position:absolute;
+}
+
+.bg-el{
+  width: 20vw;
+  height:25vw;
+  object-fit: cover;
+}
+
 .el1{
   left:0;
-  top:100vw;
+  top:1900px;
   opacity: 0.5;
   -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
 	        animation: pulsate-fwd 2s ease-in-out infinite both;
 }
 
+
 .el2{
   right:0;
-  top:120vw;
+  top:2500px;
   opacity: 0.5;
   -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
 	        animation: pulsate-fwd 2s ease-in-out infinite both;
@@ -85,14 +101,14 @@
 
 .el3{
   right:0;
-  top:60vw;
+  top:100px;
   opacity: 0.5;
   -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
 	        animation: pulsate-fwd 2s ease-in-out infinite both;
 }
 .el4{
   left:0;
-  top:30vw;
+  top:700px;
   opacity: 0.5;
   -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
 	        animation: pulsate-fwd 2s ease-in-out infinite both;

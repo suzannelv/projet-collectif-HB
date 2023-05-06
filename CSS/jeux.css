@@ -100,7 +100,8 @@ li[class*="flip-card"]
     pointer-events: none;
 }
 
-li[class*="flip-card"] img  /*et là j'avais oublié l'étoile, c'est a cause de ça qu'on avait pas les img au click*/
+ /*et là j'avais oublié l'étoile, c'est a cause de ça qu'on avait pas les img au click*/
+li[class*="flip-card"] img 
 {
     visibility: visible;
 }

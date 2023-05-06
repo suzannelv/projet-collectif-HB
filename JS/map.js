@@ -1,6 +1,7 @@
 let map;
 let markers = [];
-let currentMarkerIndex = -1; // Initialise à -1 pour que le premier clic active le premier marqueur
+// Initialise à -1 pour que le premier clic active le premier marqueur
+let currentMarkerIndex = -1; 
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -8,9 +9,11 @@ function initMap() {
         zoom: 13
     });
 
-    let images = document.getElementsByTagName('img');
+    let images = document.querySelectorAll('.verso');
     for (let i = 0; i < images.length; i++) {
         images[i].addEventListener('click', function() {
+            // Réinitialise currentMarkerIndex à chaque nouveau clic
+            currentMarkerIndex = -1;
             let lat = this.dataset.latitude;
             let lng = this.dataset.longitude;
             let latLng = new google.maps.LatLng(lat, lng);

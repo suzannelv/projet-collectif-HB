@@ -1,8 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+  .intro{
+     margin: 50px auto;
+  }
+  .info-avatar img{
+    border-radius: 20px;
+    
+  }
+
+  .info-avatar img:hover {
+   transform: scale(1.2);
+  }
+
+  
   #display-info {
-    background-color:rgb(238, 220, 220);
+    background-color:black;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(40, 15, 15, 0.929);
+    color:white;
 
+  }
+  #display-info h3{
+    
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 2px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+
+  }
+
+  #display-info h3:hover{
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 5px;
+  }
+
+
+  #map{
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(40, 15, 15, 0.929);
   }
 
 

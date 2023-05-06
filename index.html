@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type=".png" href="./Img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./CSS/index.css">
+  
     <title>Projet collectif</title>
   </head>
   <body>
@@ -53,18 +54,24 @@
       <!-- list avatar -->
       <section class="list-avatar container-fluid flex-column bg-black">
         <!-- elements du fond -->
-        <div class="el el1">
-          <img src="./Img/el1.png" alt="">
+        <div class="el">
+          <div class="el1">
+            <img src="./Img/el1.png" alt="" class="bg-el">
+          </div>
+
+          <div class="el2">
+            <img src="./Img/el2.png" alt="" class="bg-el">
+          </div>
+
+          <div class="el3">
+            <img src="./Img/el3.png" alt="" class="bg-el">
+          </div>
+
+          <div class="el4">
+            <img src="./Img/el4.png" alt="" class="bg-el">
+          </div>
         </div>
-        <div class="el el2">
-          <img src="./Img/el2.png" alt="">
-        </div>
-        <div class="el el3">
-          <img src="./Img/el3.png" alt="">
-        </div>
-        <div class="el el4">
-          <img src="./Img/el4.png" alt="">
-        </div>
+     
 
         <!-- ligne 1 -->
         <div class="row">
@@ -271,15 +278,13 @@
     </main>
 
     <!-- carte personnelle -->
-    <div class="container-fluid carte-personnelle bg-black">
-      <div class="row d-flex ">
+    <div class="container-fluid carte-personnelle bg-black ">
+      <div class="row d-flex flex-wrap">
         <div class="col">
           <div id="display-info" class="row d-flex justify-content-center"></div>
         </div> 
 
-        <div id="map" class="col bg-secondary">
-          <h3>Map</h3>
-        </div>
+        <div id="map" class="col"></div>
       </div>
     </div>
 
@@ -301,9 +306,9 @@
 
     <script src="./JS/index.js"></script>
     <script src="./JS/info.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI2uSAf3RwAdhsiZ0jzISVAc4y9WrfhbA&callback=initMap"
-    async ></script>
     <script src="./JS/map.js"></script>
     <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI2uSAf3RwAdhsiZ0jzISVAc4y9WrfhbA&callback=initMap"
+    async></script>
   </body>
 </html>

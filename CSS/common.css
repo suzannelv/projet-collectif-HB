@@ -4,32 +4,6 @@
   box-sizing: border-box;
 }
 
-body::before{
-  content:"H";
-  position: fixed;
-  top: 20%;
-  left:10%;
-  font-size: 20em;
-  font-weight: 700;
-  color: transparent;
-  -webkit-text-stroke: 1px #555;
-  white-space: nowrap;
-
-}
-
-body::after{
-  content:"B";
-  position: fixed;
-  top: 20%;  
-  right: 10%; 
-  font-size: 20em;
-  font-weight: 700;
-  color: transparent;
-  -webkit-text-stroke: 1px #555;
-  white-space: nowrap;
-
-}
-
 ul, li {
   list-style: none;
 
@@ -39,14 +13,7 @@ a {
   text-decoration: none;
   color: black;
 }
-/* section head */
-.head{
-  background: url(../Img/fond-carte.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 100%;
-}
+
 /* menu header */
 .col-head, .text-white {
   padding: 20px;
@@ -60,8 +27,6 @@ a {
 }
 
 .text-muted {
-  color: white;
-  text-align: center;
   font-size: 14px;
 }
 
@@ -69,13 +34,31 @@ a {
   margin: 2px;
 }
 
+/* section head */
+.head{
+  background: url(../Img/fond-carte.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+}
+
+.head .clown img{
+  width: 32vw;
+  height: 35vw;
+
+}
+
+
+
+/* PIOCHE UNE CARTE */
 .pioche-carte {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-/* PIOCHE UNE CARTE */
+
 .left {
   position: absolute;
   border: 3px solid red;
@@ -86,7 +69,7 @@ a {
 }
 
 .title {
-  font-size: 100px;
+  font-size: 6vw;
   margin-top: 20px;
   padding: 20px;
   font-family: "CloisterBlack", sans-serif;
@@ -101,10 +84,12 @@ a {
   left: 0;
   bottom:0;
 }
+
 .title-animate{
   -webkit-animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 @-webkit-keyframes focus-in-expand-fwd {
   0% {
     letter-spacing: -0.5em;
@@ -122,6 +107,7 @@ a {
     opacity: 1;
   }
 }
+
 @keyframes focus-in-expand-fwd {
   0% {
     letter-spacing: -0.5em;
