@@ -1,6 +1,6 @@
 import MemoryGame from './MemoryGame.js';
 
-const board_game_container = document.body.querySelector('ul[id="board_game_container"]'); 
+const board_game_container = document.body.querySelector('#board_game_container'); 
 
 const repeated_images = [
     '../Img/card/Aya.jpg',
@@ -27,9 +27,9 @@ const repeated_images = [
 
 const attempts_count_paragraph = document.body.querySelector('p[data-attempts-count]');
 
-const pair_found_paragraph = document.body.querySelector('p[data-pair-found]'); 
+const pair_found_paragraph = document.body.querySelector('data-pair-found'); 
 
-const score_paragraph = document.body.querySelector('p[data-score]');
+const score_paragraph = document.body.querySelector('data-score');
 
 const timer_paragraph = document.body.querySelector('p[data-timer]');
 

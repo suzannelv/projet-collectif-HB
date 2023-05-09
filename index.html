@@ -13,19 +13,28 @@
   </head>
   <body>
     <header> <!-- menu burger -->
-      <div class="collapse bg-dark" id="navbarHeader">
+      <div class="collapse bg-black" id="navbarHeader">
         <div class="container-head">
           <div class="col-head">
-            <h4 class="text-white">À propos de nous</h4>
-            <p class="text-muted">Nous sommes 16 apprenants déterminés à obtenir notre diplôme DWWM !</p>
+            <h4 class="text-white">Agenda des événements</h4>
+            <a href="login.html">
+              <button class="btn text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                  <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+                <i class="bi bi-calendar3 me-2"></i> Se connecter
+              </button>
+            </a>
           </div>
         </div>
       </div>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="navbar navbar-dark bg-black shadow-sm">
         <div class="container">
-          <a href="login.html" class="navbar-brand d-flex align-items-center">
+          <a href="#" class="navbar-brand d-flex align-items-center">
             <img class="icon-title" src="./Img/logo.png" width="45" alt="Icone Jocker">
           </a>
+    
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -291,15 +300,15 @@
     <!-- footer -->
       <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-muted">&copy; 2023 Human Booster, Inc</p>
+          <p class="col-md-4 mb-0 text-muted">&copy; 2023 Human Booster - Tous droits réservés</p>
       
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <img src="./Img/logo.png" alt="logo-jocker" class="rounded-circle" width="70">
+          <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="./Img/logo.png" alt="logo-jocker" class="square" height="60">
           </a>
       
           <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">À propos de nous</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Mentions légales</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"> <img src="https://cdn-icons-png.flaticon.com/512/17/17507.png" alt="flèche retour en haut" width="45"></a></li>
           </ul>
         </footer>
       </div>

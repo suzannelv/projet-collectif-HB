@@ -6,7 +6,7 @@ let currentMarkerIndex = -1;
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 48.8584, lng: 2.2945},
-        zoom: 13
+        zoom: 7
     });
 
     let images = document.querySelectorAll('.verso');

@@ -6,7 +6,7 @@
 
 ul, li {
   list-style: none;
-
+  padding:  5px 15px;
 }
 
 a {
@@ -49,7 +49,10 @@ a {
 
 }
 
-
+.bi-bi-person-circle {
+    color: blue;
+    margin: 2px;
+}
 
 /* PIOCHE UNE CARTE */
 .pioche-carte {
@@ -125,4 +128,3 @@ a {
     opacity: 1;
   }
 }
-

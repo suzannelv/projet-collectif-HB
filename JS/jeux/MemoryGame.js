@@ -98,7 +98,10 @@ export default class MemoryGame
         this.compareCards();
     }
 
-    compareCards(){ /*verifie si les cartes sont identiques grâce aux "src"*/
+
+
+    compareCards(){ 
+        /*verifie si les cartes sont identiques grâce aux "src"*/
         if (this.cards_selected.length !== 2){
             return;
         }
@@ -122,7 +125,8 @@ export default class MemoryGame
         
         this.cards_matched.push(...this.cards_selected);
 
-        this.cards_selected.length = []; /*réinitialise le tableau des cartes séléctionnées*/
+        /*réinitialise le tableau des cartes séléctionnées*/
+        this.cards_selected.length = []; 
 
         this.board_game_container.classList.remove('no-click');
         
@@ -154,8 +158,8 @@ export default class MemoryGame
         if (this.cards_matched.length !== 32){
             return;
         }
-
-        clearInterval(this.timer_reference);/* stoppe le timer */
+       /* stoppe le timer */
+        clearInterval(this.timer_reference);
 
         this.board_game_container.classList.add('no-click');
 
